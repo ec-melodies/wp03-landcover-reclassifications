@@ -1,0 +1,243 @@
+{
+    "@context": {
+      "id": "@id",
+      "type": "@type",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "cpmm": "http://purl.org/voc/cpm_mapping#",
+      "label": { "@id": "skos:prefLabel", "@container": "@language" },
+      "preferredColor": "foo:bar",
+      "ObservablePropertyMapping": "cpmm:ObservablePropertyMapping",
+      "sourceObservedProperty": "cpmm:sourceObservedProperty",
+      "destinationbservedProperty": "cpmm:destinationObservedProperty",
+      "categoryMappings": "cpmm:categoryMapping",
+      "sourceCategory": "cpmm:sourceCategory",
+      "destinationCategory": "cpmm:destinationCategory"      
+    },
+    "type": "ObservablePropertyMapping",
+    "id": "http://.../wp3/lc/modis-mapping",
+    "label": {
+      "en": "MELODIES WP3 / MODIS Land Cover Mapping"
+    },
+    "sourceObservedProperty": {
+      "label": {
+        "en": "MELODIES WP3 Land Cover"
+      }
+    },
+    "destinationObservedProperty": {
+      "id": "http://glcf.umd.edu/data/lc/",
+      "label": {
+        "en": "MODIS Land Cover"
+      },
+      "categories": [
+        {
+            "id": "http://glcf.umd.edu/data/lc/categories#Water",
+            "label": {
+              "en": "Water"
+            },
+            "preferredColor": "#000080"
+        },
+        {
+            "id": "http://glcf.umd.edu/data/lc/categories#EvergreenNeedleleafForest",
+            "label": {
+              "en": "Evergreen Needleleaf Forest"
+            },
+            "preferredColor": "#008000"
+        },
+        {
+            "id": "http://glcf.umd.edu/data/lc/categories#EvergreenBroadleafForest",
+            "label": {
+              "en": "Evergreen Broadleaf Forest"
+            },
+            "preferredColor": "#00FF00"
+        },
+        {
+            "id": "http://glcf.umd.edu/data/lc/categories#DeciduousNeedleleafForest",
+            "label": {
+              "en": "Deciduous Needleleaf Forest"
+            },
+            "preferredColor": "#99CC00"
+        },
+        {
+            "id": "http://glcf.umd.edu/data/lc/categories#DeciduousBroadleafForest",
+            "label": {
+              "en": "Deciduous Broadleaf Forest"
+            },
+            "preferredColor": "#99FF99"
+        },
+        {
+            "id": "http://glcf.umd.edu/data/lc/categories#MixedForest",
+            "label": {
+              "en": "Mixed Forest"
+            },
+            "preferredColor": "#339966"
+        },
+        {
+            "id": "http://glcf.umd.edu/data/lc/categories#ClosedShrubland",
+            "label": {
+              "en": "Closed Shrubland"
+            },
+            "preferredColor": "#993366"
+        },
+        {
+            "id": "http://glcf.umd.edu/data/lc/categories#OpenShrubland",
+            "label": {
+              "en": "Open Shrubland"
+            },
+            "preferredColor": "#FFCC99"
+        },
+        {
+            "id": "http://glcf.umd.edu/data/lc/categories#WoodySavannas",
+            "label": {
+              "en": "Woody Savannas"
+            },
+            "preferredColor": "#CCFFCC"
+        },
+        {
+            "id": "http://glcf.umd.edu/data/lc/categories#Savannas",
+            "label": {
+              "en": "Savannas"
+            },
+            "preferredColor": "#FFCC00"
+        },
+        {
+            "id": "http://glcf.umd.edu/data/lc/categories#Grasslands",
+            "label": {
+              "en": "Grasslands"
+            },
+            "preferredColor": "#FF9900"
+        },
+        {
+            "id": "http://glcf.umd.edu/data/lc/categories#PermanentWetlands",
+            "label": {
+              "en": "Permanent Wetlands"
+            },
+            "preferredColor": "#006699"
+        },
+        {
+            "id": "http://glcf.umd.edu/data/lc/categories#Croplands",
+            "label": {
+              "en": "Croplands"
+            },
+            "preferredColor": "#FFFF00"
+        },
+        {
+            "id": "http://glcf.umd.edu/data/lc/categories#UrbanAndBuiltUp",
+            "label": {
+              "en": "Urban and Built-Up"
+            },
+            "preferredColor": "#FF0000"
+        },
+        {
+            "id": "http://glcf.umd.edu/data/lc/categories#CroplandNaturalVegetationMosaic",
+            "label": {
+              "en": "Cropland/Natural Vegetation Mosaic"
+            },
+            "preferredColor": "#999966"
+        },
+        {
+            "id": "http://glcf.umd.edu/data/lc/categories#SnowAndIce",
+            "label": {
+              "en": "Snow and Ice"
+            },
+            "preferredColor": "#FFFFFF"
+        },
+        {
+            "id": "http://glcf.umd.edu/data/lc/categories#BarrenOrSparselyVegetated",
+            "label": {
+              "en": "Barren or Sparsely Vegetated"
+            },
+            "preferredColor": "#808080"
+        }
+      ]
+    },
+    "categoryMappings": [
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#Saltwater",
+            "destinationCategory": "http://glcf.umd.edu/data/lc/categories#Water"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#Freshwater",
+            "destinationCategory": "http://glcf.umd.edu/data/lc/categories#Water"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#ConiferousWoodland",
+            "destinationCategory": "http://glcf.umd.edu/data/lc/categories#DeciduousNeedleleafForest"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#BroadleafWoodland",
+            "destinationCategory": "http://glcf.umd.edu/data/lc/categories#DeciduousBroadleafForest"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#Heather",
+            "destinationCategory": "http://glcf.umd.edu/data/lc/categories#OpenShrubland"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#HeatherGrassland",
+            "destinationCategory": "http://glcf.umd.edu/data/lc/categories#OpenShrubland"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#ImprovedGrassland",
+            "destinationCategory": "http://glcf.umd.edu/data/lc/categories#Grasslands"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#RoughGrassland",
+            "destinationCategory": "http://glcf.umd.edu/data/lc/categories#Grasslands"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#NeutralGrassland",
+            "destinationCategory": "http://glcf.umd.edu/data/lc/categories#Grasslands"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#CalcareousGrassland",
+            "destinationCategory": "http://glcf.umd.edu/data/lc/categories#Grasslands"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#AcidGrassland",
+            "destinationCategory": "http://glcf.umd.edu/data/lc/categories#Grasslands"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#FenAndMarshAndSwamp",
+            "destinationCategory": "http://glcf.umd.edu/data/lc/categories#PermanentWetlands"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#Bog",
+            "destinationCategory": "http://glcf.umd.edu/data/lc/categories#PermanentWetlands"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#ArableAndHorticulture",
+            "destinationCategory": "http://glcf.umd.edu/data/lc/categories#Croplands"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#Urban",
+            "destinationCategory": "http://glcf.umd.edu/data/lc/categories#UrbanAndBuiltUp"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#Suburban",
+            "destinationCategory": "http://glcf.umd.edu/data/lc/categories#UrbanAndBuiltUp"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#MontaneHabitats",
+            "destinationCategory": "http://glcf.umd.edu/data/lc/categories#BarrenOrSparselyVegetated"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#InlandRock",
+            "destinationCategory": "http://glcf.umd.edu/data/lc/categories#BarrenOrSparselyVegetated"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#SupraLittoralRock",
+            "destinationCategory": "http://glcf.umd.edu/data/lc/categories#BarrenOrSparselyVegetated"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#SupraLittoralSediment",
+            "destinationCategory": "http://glcf.umd.edu/data/lc/categories#BarrenOrSparselyVegetated"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#LittoralRock",
+            "destinationCategory": "http://glcf.umd.edu/data/lc/categories#BarrenOrSparselyVegetated"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#LittoralSediment",
+            "destinationCategory": "http://glcf.umd.edu/data/lc/categories#BarrenOrSparselyVegetated"
+        }
+    ]
+}
