@@ -3,17 +3,17 @@
       "id": "@id",
       "type": "@type",
       "skos": "http://www.w3.org/2004/02/skos/core#",
-      "cpmm": "http://purl.org/voc/cpm_mapping#",
+      "catremap": "http://purl.org/voc/cpm_catremap#",
       "label": { "@id": "skos:prefLabel", "@container": "@language" },
       "preferredColor": "foo:bar",
-      "CategoricalPropertyMapping": "cpmm:CategoricalPropertyMapping",
-      "sourceObservedProperty": "cpmm:sourceObservedProperty",
-      "destinationbservedProperty": "cpmm:destinationObservedProperty",
-      "categoryMappings": "cpmm:categoryMapping",
-      "sourceCategory": "cpmm:sourceCategory",
-      "destinationCategory": "cpmm:destinationCategory"
+      "CategoryRemappingDefinition": "catremap:CategoryRemappingDefinition",
+      "sourceObservedProperty": "catremap:sourceObservedProperty",
+      "destinationbservedProperty": "catremap:destinationObservedProperty",
+      "categoryMappings": "catremap:categoryMapping",
+      "sourceCategory": "catremap:sourceCategory",
+      "destinationCategory": "catremap:destinationCategory"
     },
-    "type": "CategoricalPropertyMapping",
+    "type": "CategoryRemappingDefinition",
     "id": "https://github.com/ec-melodies/wp03-modis-landcover-mapping",
     "label": {
       "en": "MELODIES WP3 / MODIS Land Cover Mapping"
