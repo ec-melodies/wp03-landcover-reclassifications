@@ -6,14 +6,14 @@
       "cpmm": "http://purl.org/voc/cpm_mapping#",
       "label": { "@id": "skos:prefLabel", "@container": "@language" },
       "preferredColor": "foo:bar",
-      "ObservablePropertyMapping": "cpmm:ObservablePropertyMapping",
+      "CategoricalPropertyMapping": "cpmm:CategoricalPropertyMapping",
       "sourceObservedProperty": "cpmm:sourceObservedProperty",
       "destinationbservedProperty": "cpmm:destinationObservedProperty",
       "categoryMappings": "cpmm:categoryMapping",
       "sourceCategory": "cpmm:sourceCategory",
-      "destinationCategory": "cpmm:destinationCategory"      
+      "destinationCategory": "cpmm:destinationCategory"
     },
-    "type": "ObservablePropertyMapping",
+    "type": "CategoricalPropertyMapping",
     "id": "https://github.com/ec-melodies/wp03-modis-landcover-mapping",
     "label": {
       "en": "MELODIES WP3 / MODIS Land Cover Mapping"
