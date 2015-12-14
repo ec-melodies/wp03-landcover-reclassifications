@@ -14,7 +14,7 @@
       "destinationCategory": "cpmm:destinationCategory"      
     },
     "type": "ObservablePropertyMapping",
-    "id": "http://.../wp3/lc/modis-mapping",
+    "id": "https://github.com/ec-melodies/wp03-modis-landcover-mapping",
     "label": {
       "en": "MELODIES WP3 / MODIS Land Cover Mapping"
     },
