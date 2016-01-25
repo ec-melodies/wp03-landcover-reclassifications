@@ -1,0 +1,173 @@
+{
+    "@context": {
+      "id": "@id",
+      "type": "@type",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "catremap": "http://purl.org/voc/cpm_catremap#",
+      "label": { "@id": "skos:prefLabel", "@container": "@language" },
+      "preferredColor": "foo:bar",
+      "CategoryRemappingDefinition": "catremap:CategoryRemappingDefinition",
+      "sourceObservedProperty": "catremap:sourceObservedProperty",
+      "destinationbservedProperty": "catremap:destinationObservedProperty",
+      "categoryMappings": "catremap:categoryMapping",
+      "sourceCategory": "catremap:sourceCategory",
+      "destinationCategory": "catremap:destinationCategory"
+    },
+    "type": "CategoryRemappingDefinition",
+    "id": "https://github.com/ec-melodies/wp03-modis-landcover-mapping",
+    "label": {
+      "en": "MELODIES WP3 / UN LCCS Land Cover Mapping"
+    },
+    "sourceObservedProperty": {
+      "label": {
+        "en": "MELODIES WP3 Land Cover"
+      }
+    },
+    "destinationObservedProperty": {
+      "id": "http://www.glcn.org/ont_2_en.jsp/",
+      "label": {
+        "en": "UNFCC Land Cover"
+      },
+      "categories": [
+        {
+            "id": "http://www.glcn.org/ont_2_en.jsp#Forest",
+            "label": {
+              "en": "Forest"
+            },
+            "preferredColor": "#FF0000"
+        },
+        {
+            "id": "http://www.glcn.org/ont_2_en.jsp#Cropland",
+            "label": {
+              "en": "Cropland"
+            },
+            "preferredColor": "#732600"
+        },
+        {
+            "id": "http://www.glcn.org/ont_2_en.jsp#Grassland",
+            "label": {
+              "en": "Grassland"
+            },
+            "preferredColor": "#00FF00"
+        },
+        {
+            "id": "http://www.glcn.org/ont_2_en.jsp#Wetland",
+            "label": {
+              "en": "Wetland"
+            },
+            "preferredColor": "#801A80"
+        },
+        {
+            "id": "http://www.glcn.org/ont_2_en.jsp#Settlements",
+            "label": {
+              "en": "Settlements"
+            },
+            "preferredColor": "#808080"
+        },
+        {
+            "id": "http://www.glcn.org/ont_2_en.jsp#Other_Land",
+            "label": {
+              "en": "Other Land"
+            },
+            "preferredColor": "#FFFF80"
+        },
+        {
+            "id": "http://www.glcn.org/ont_2_en.jsp#Water",
+            "label": {
+              "en": "Water"
+            },
+            "preferredColor": "#0000FF"
+        }
+      ]
+    },
+    "categoryMappings": [
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#Saltwater",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Water"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#Freshwater",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Water"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#Coniferous_Woodland",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Forest"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#Broadleaf_Woodland",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Forest"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#Heather",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Wetland"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#Heather_Grassland",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Wetland"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#Improved_Grassland",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Grassland"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#Rough_Grassland",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Grassland"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#Neutral_Grassland",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Grassland"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#Calcareous_Grassland",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Grassland"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#Acid_Grassland",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Grassland"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#Fen_Marsh_and_Swamp",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Wetland"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#Bog",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Wetland"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#Arable_and_Horticulture",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Cropland"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#Urban",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Settlements"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#Suburban",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Settlements"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#Montane_Habitats",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Other_Land"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#Inland_Rock",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Other_Land"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#Supra-littoral_Rock",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Other_Land"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#Supra-littoral_Sediment",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Other_Land"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#Littoral_Rock",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Other_Land"
+        },
+        {
+            "sourceCategory": "http://melodiesproject.eu/datasets/WP3/land-cover/def#Littoral_Sediment",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Other_Land"
+        }
+    ]
+}
