@@ -24,7 +24,7 @@
       }
     },
     "destinationObservedProperty": {
-      "id": "http://www.glcn.org/ont_2_en.jsp/",
+      "id": "http://www.glcn.org/ont_2_en.jsp",
       "label": {
         "en": "UN LCCS Land Cover"
       },
