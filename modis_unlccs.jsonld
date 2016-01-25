@@ -1,0 +1,153 @@
+{
+    "@context": {
+      "id": "@id",
+      "type": "@type",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "catremap": "http://purl.org/voc/cpm_catremap#",
+      "label": { "@id": "skos:prefLabel", "@container": "@language" },
+      "preferredColor": "foo:bar",
+      "CategoryRemappingDefinition": "catremap:CategoryRemappingDefinition",
+      "sourceObservedProperty": "catremap:sourceObservedProperty",
+      "destinationbservedProperty": "catremap:destinationObservedProperty",
+      "categoryMappings": "catremap:categoryMapping",
+      "sourceCategory": "catremap:sourceCategory",
+      "destinationCategory": "catremap:destinationCategory"
+    },
+    "type": "CategoryRemappingDefinition",
+    "id": "https://github.com/ec-melodies/wp03-modis-landcover-mapping",
+    "label": {
+      "en": "MODIS LC / UN LCCS Land Cover Mapping"
+    },
+    "sourceObservedProperty": {
+      "label": {
+        "en": "MODIS Land Cover"
+      }
+    },
+    "destinationObservedProperty": {
+      "id": "http://www.glcn.org/ont_2_en.jsp/",
+      "label": {
+        "en": "UNFCC Land Cover"
+      },
+      "categories": [
+        {
+            "id": "http://www.glcn.org/ont_2_en.jsp#Forest",
+            "label": {
+              "en": "Forest"
+            },
+            "preferredColor": "#FF0000"
+        },
+        {
+            "id": "http://www.glcn.org/ont_2_en.jsp#Cropland",
+            "label": {
+              "en": "Cropland"
+            },
+            "preferredColor": "#732600"
+        },
+        {
+            "id": "http://www.glcn.org/ont_2_en.jsp#Grassland",
+            "label": {
+              "en": "Grassland"
+            },
+            "preferredColor": "#00FF00"
+        },
+        {
+            "id": "http://www.glcn.org/ont_2_en.jsp#Wetland",
+            "label": {
+              "en": "Wetland"
+            },
+            "preferredColor": "#801A80"
+        },
+        {
+            "id": "http://www.glcn.org/ont_2_en.jsp#Settlements",
+            "label": {
+              "en": "Settlements"
+            },
+            "preferredColor": "#808080"
+        },
+        {
+            "id": "http://www.glcn.org/ont_2_en.jsp#Other_Land",
+            "label": {
+              "en": "Other Land"
+            },
+            "preferredColor": "#FFFF80"
+        },
+        {
+            "id": "http://www.glcn.org/ont_2_en.jsp#Water",
+            "label": {
+              "en": "Water"
+            },
+            "preferredColor": "#0000FF"
+        }
+      ]
+    },
+    "categoryMappings": [
+        {
+            "sourceCategory": "http://glcf.umd.edu/data/lc/categories#Water",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Water"
+        },
+        {
+            "sourceCategory": "http://glcf.umd.edu/data/lc/categories#Evergreen_Needleleaf_Forest",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Forest"
+        },
+        {
+            "sourceCategory": "http://glcf.umd.edu/data/lc/categories#Evergreen_Broadleaf_Forest",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Forest"
+        },
+        {
+            "sourceCategory": "http://glcf.umd.edu/data/lc/categories#Deciduous_Needleleaf_Forest",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Forest"
+        },
+        {
+            "sourceCategory": "http://glcf.umd.edu/data/lc/categories#Deciduous_Broadleaf_Forest",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Forest"
+        },
+        {
+            "sourceCategory": "http://glcf.umd.edu/data/lc/categories#Mixed_Forest",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Forest"
+        },
+        {
+            "sourceCategory": "http://glcf.umd.edu/data/lc/categories#Closed_Shrubland",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Cropland"
+        },
+        {
+            "sourceCategory": "http://glcf.umd.edu/data/lc/categories#Open_Shrubland",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Cropland"
+        },
+        {
+            "sourceCategory": "http://glcf.umd.edu/data/lc/categories#Woody_Savannas",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Grassland"
+        },
+        {
+            "sourceCategory": "http://glcf.umd.edu/data/lc/categories#Savannas",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Grassland"
+        },
+        {
+            "sourceCategory": "http://glcf.umd.edu/data/lc/categories#Grasslands",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Grassland"
+        },
+        {
+            "sourceCategory": "http://glcf.umd.edu/data/lc/categories#Permanent_Wetlands",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Wetland"
+        },
+        {
+            "sourceCategory": "http://glcf.umd.edu/data/lc/categories#Croplands",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Cropland"
+        },
+        {
+            "sourceCategory": "http://glcf.umd.edu/data/lc/categories#Urban_and_Built-Up",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Settlements"
+        },
+        {
+            "sourceCategory": "http://glcf.umd.edu/data/lc/categories#Cropland/Natural_Vegetation_Mosaic",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Cropland"
+        },
+        {
+            "sourceCategory": "http://glcf.umd.edu/data/lc/categories#Snow_and_Ice",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Other_Land"
+        },
+        {
+            "sourceCategory": "http://glcf.umd.edu/data/lc/categories#Barren_or_Sparsely_Vegetated",
+            "destinationCategory": "http://www.glcn.org/ont_2_en.jsp#Other_Land"
+        }
+    ]
+}
