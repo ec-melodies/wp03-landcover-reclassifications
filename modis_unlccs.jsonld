@@ -14,7 +14,7 @@
       "destinationCategory": "catremap:destinationCategory"
     },
     "type": "CategoryRemappingDefinition",
-    "id": "https://github.com/ec-melodies/wp03-modis-landcover-mapping",
+    "id": "https://github.com/ec-melodies/wp03-landcover-reclassifications/modis_unlccs",
     "label": {
       "en": "MODIS LC / UN LCCS Land Cover Mapping"
     },
@@ -24,7 +24,7 @@
       }
     },
     "destinationObservedProperty": {
-      "id": "http://www.glcn.org/ont_2_en.jsp/",
+      "id": "http://www.glcn.org/ont_2_en.jsp",
       "label": {
         "en": "UNFCC Land Cover"
       },
