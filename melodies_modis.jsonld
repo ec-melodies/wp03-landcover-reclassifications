@@ -14,7 +14,7 @@
       "destinationCategory": "catremap:destinationCategory"
     },
     "type": "CategoryRemappingDefinition",
-    "id": "https://github.com/ec-melodies/wp03-modis-landcover-mapping",
+    "id": "https://github.com/ec-melodies/wp03-landcover-reclassifications/melodies_modis",
     "label": {
       "en": "MELODIES WP3 / MODIS Land Cover Mapping"
     },
